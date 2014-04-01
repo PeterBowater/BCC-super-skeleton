@@ -121,4 +121,7 @@ p{
 .sidebar .regularEvents dd.moreLink {
 	text-align: right;
 }
-
+.mura-next-n{
+	font-size: 18px;
+	font-weight: bold;
+}
