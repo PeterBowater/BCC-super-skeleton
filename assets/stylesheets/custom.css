@@ -196,3 +196,30 @@ ul.social li.facebook_follow{
 div.fb-like {
 	width: 100%;
 }
+#mc_embed_signup .clear{
+	visibility:visible;
+	display: inline;
+}
+#mc_embed_signup .mc-field-group{
+	float: left;
+}
+#mc-embedded-subscribe{
+	margin-top: 23px;
+}
+#mce-EMAIL{
+	height: 20px;
+	font-size: 18px !important;
+}
+#mce-responses .response{
+	height: 0;
+}
+
+
+
+
+
+
+
+
+
+
