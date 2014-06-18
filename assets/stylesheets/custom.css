@@ -121,7 +121,78 @@ p{
 .sidebar .regularEvents dd.moreLink {
 	text-align: right;
 }
-.mura-next-n{
+.mura-next-n,
+.backTo{
 	font-size: 18px;
 	font-weight: bold;
+}
+
+.picholder:hover .overlay{
+	opacity:0.9;
+	left: 440px; 
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+	}
+
+
+.picholder{
+	max-width:580px;
+	position:relative;
+	}
+
+/*Centering size and color shenenigans*/
+.overlay {
+    bottom: 0;
+    left: 600px; 
+    top: 170px; 
+    right: 0;
+    height: 40px;
+    width: 100px;
+    margin: auto;
+    position: absolute;
+    background-color:#3f3f3f;
+    border-radius: 10px;
+    opacity:0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.fancypics{
+	width:100%;
+	}
+.text_box{
+  color:#fff;
+  font-weight:bold;
+  font-size:1.6em;
+  padding:10px;
+  padding-bottom:50%;
+  text-align:center;
+  }
+
+.overlay a:hover {
+	text-decoration: none;
+	opacity: 0.6;
+  }
+a.eventImage:hover{
+	opacity: 1;
+}
+
+.content img.fancypics {
+	border: none;
+}
+.fb-like{
+	padding-top: 10px;
+	z-index: 100;
+}
+ul.social li.facebook_follow{
+	width: 100px;
+	line-height: 6px;
+}
+div.fb-like {
+	width: 100%;
 }

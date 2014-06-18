@@ -1,3 +1,12 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=1484786858406647";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -110,7 +119,7 @@
 				<!-- <p>This is the site tagline</p> -->
 				<ul class="social">
 					<!---<li><a href="##"><img src="#$.siteConfig('themeAssetPath')#/assets/images/theme/social-icons/google_plus_32.png" alt="google" title="Google+" /></a></li>--->
-					<li><a href="https://www.facebook.com/boscommunitychurch" target="_blank"><img src="#$.siteConfig('themeAssetPath')#/assets/images/theme/social-icons/facebook_32.png" alt="facebook" title="Facebook"/></a></li>
+					<li class="facebook_follow"><div class="fb-like" data-href="https://www.facebook.com/boscommunitychurch" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></li>
 					<li><a href="https://twitter.com/BOSCommChurch" target="_blank"><img src="#$.siteConfig('themeAssetPath')#/assets/images/theme/social-icons/twitter_32.png" alt="twitter" title="Twitter" /></a></li>
 					<!---<li><a href="##"><img src="#$.siteConfig('themeAssetPath')#/assets/images/theme/social-icons/rss_32.png" alt="rss" title="RSS" /></a></li>--->
 				</ul>

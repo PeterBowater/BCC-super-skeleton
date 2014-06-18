@@ -124,6 +124,7 @@
 						<!-- /META AREA -->
 					</cfif>
 				#$.dspObjects(2)#
+				<div class="fb-like" data-href="#$.content().getURL()#" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 				<!--- END DEFAULT OUTPUT --->
 			</cfif>
 		</div>
@@ -132,8 +133,12 @@
 		<cfif len(objects3) or len($.content().getImageURL())>
 		<!-- SIDEBAR -->
 		<div class="five columns sidebar">
-			<cfif len($.content().getImageURL())>
-				<img src="#$.content().getImageURL(width='340')#" />
+			<cfif $.content().getValue('subType') NEQ 'Event'>
+				<cfif len($.content().getImageURL())>
+					<img src="#$.content().getImageURL(width='340')#" />
+				</cfif>
+			<cfelse>
+				#$.dspThemeInclude('display_objects/custom/dsp_regularEvents.cfm')#
 			</cfif>
 			#$.dspObjects(3)#
 		</div>

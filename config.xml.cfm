@@ -4,33 +4,7 @@
 		</extension>
 		<extension type="Calendar" subType="List">
 		</extension>
-		<extension type="Page" subType="Default">
-		<attributeset name="Additional Options" container="Basic">
-		<attribute 
-			name="ssSupertagline"
-			label="Super tag line"
-			hint=""
-			type="textbox"
-			defaultValue=""
-			required="false"
-			validation=""
-			regex=""
-			message=""
-			optionList=""
-			optionLabelList="" />
-		<attribute 
-			name="ssNavDescription"
-			label="Nav Description"
-			hint="Very small sub-text gets placed under each primary nav item if used"
-			type="textbox"
-			defaultValue=""
-			required="false"
-			validation=""
-			regex=""
-			message=""
-			optionList=""
-			optionLabelList="" />
-		</attributeset>
+		<extension type="Page" subType="Event">
 		</extension>
 		<extension type="Page" subType="HomePageSlide">
 		<attributeset name="Home page slider options" container="Basic">

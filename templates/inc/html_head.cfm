@@ -35,6 +35,21 @@
   	================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 	
+	<!---- FB
+	================================================== --->
+	<cfif len($.content().getImageURL())>
+		<meta property="og:image" content="#$.content().getImageURL()#"/>
+	<cfelse>
+		<meta property="og:image" content="/BOSCC/includes/themes/BCC-super-skeleton/images/logosm.png"/>
+	
+	</cfif>
+	<meta property="og:title" content="Burnham Community Church - #$.content().getValue('title')#"/>
+	<cfif len(stripHTML($.content().getSummary()))>
+		<meta property="og:description" content="#stripHTML($.content().getSummary())#"/>
+	<cfelse>
+		<meta property="og:description" content="#stripHTML($.content().getBody())#"/>
+	</cfif>
+	
 	<!-- CSS
 	
   	================================================== -->
@@ -83,3 +98,9 @@
 	</cfloop>
 </head>
 </cfoutput>
+
+<cfscript>
+	function stripHTML(str) {
+		return REReplaceNoCase(str,"<[^>]*>","","ALL");
+		}
+</cfscript>

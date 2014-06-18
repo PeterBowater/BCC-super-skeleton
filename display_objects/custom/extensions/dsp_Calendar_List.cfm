@@ -17,11 +17,24 @@
 	<cfloop condition="iterator.hasNext()">
 		<cfset item=iterator.next()>
 		<article class="listing">
-			<cfif len(item.getImageURL(width='580', height='274'))>
-				<img src="#item.getImageURL(width='580', height='274')#" />
+			<cfif len(item.getBody())>
+				<cfif len(item.getImageURL(width='580', height='274'))>
+					<div class="picholder">
+					    <a class="eventImage" href="#item.getURL()#"><img class="fancypics" src="#item.getImageURL(width='580', height='274')#" /></a>
+					    <div class="overlay"><a href="#item.getURL()#"><p class="text_box">More...</p></a></div>
+					</div>
+				<cfelse>
+					<a href="#item.getURL()#"><h2>#item.getValue('title')#</h2></a>
+					#item.getSummary()#
+					<a href="#item.getURL()#">More...</a>
+				</cfif>
 			<cfelse>
-				<h2>#item.getValue('title')#</h2>
-				#item.getSummary()#
+				<cfif len(item.getImageURL(width='580', height='274'))>
+					<img src="#item.getImageURL(width='580', height='274')#" />
+				<cfelse>
+					<h2>#item.getValue('title')#</h2>
+					#item.getSummary()#
+				</cfif>
 			</cfif>
 		</article>
 	</cfloop>
